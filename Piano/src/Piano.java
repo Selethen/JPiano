@@ -1,9 +1,7 @@
 import java.awt.EventQueue;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.swing.JFrame;
-import javax.swing.JButton;
+import javax.swing.JLayeredPane;
 
 public class Piano {
 
@@ -39,83 +37,84 @@ public class Piano {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 915, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		
+		JLayeredPane layeredPane = new JLayeredPane();
 		
 		SmallPianoButton cSmallButton = new SmallPianoButton("C#", 45);
-		frame.getContentPane().add(cSmallButton);
+		layeredPane.add(cSmallButton, 1, -1);
 		
 		SmallPianoButton dSmallButton = new SmallPianoButton("D#", 105);
-		frame.getContentPane().add(dSmallButton);
+		layeredPane.add(dSmallButton, 1, -1);
 		
 		SmallPianoButton fSmallButton = new SmallPianoButton("F#", 225);
-		frame.getContentPane().add(fSmallButton);
+		layeredPane.add(fSmallButton, 1, -1);
 		
 		SmallPianoButton gSmallButton = new SmallPianoButton("G#", 285);
-		frame.getContentPane().add(gSmallButton);
+		layeredPane.add(gSmallButton, 1, -1);
 		
 		SmallPianoButton aSmallButton = new SmallPianoButton("G#", 345);
-		frame.getContentPane().add(aSmallButton);
+		layeredPane.add(aSmallButton, 1, -1);
 		
 		SmallPianoButton c2SmallButton = new SmallPianoButton("C#", 465);
-		frame.getContentPane().add(c2SmallButton);
+		layeredPane.add(c2SmallButton, 1, -1);
 		
 		SmallPianoButton d2SmallButton = new SmallPianoButton("D#", 525);
-		frame.getContentPane().add(d2SmallButton);
+		layeredPane.add(d2SmallButton, 1, -1);
 		
 		SmallPianoButton f2SmallButton = new SmallPianoButton("F#", 645);
-		frame.getContentPane().add(f2SmallButton);
+		layeredPane.add(f2SmallButton, 1, -1);
 		
 		SmallPianoButton g2SmallButton = new SmallPianoButton("G#", 705);
-		frame.getContentPane().add(g2SmallButton);
+		layeredPane.add(g2SmallButton, 1, -1);
 		
 		SmallPianoButton a2SmallButton = new SmallPianoButton("G#", 765);
-		frame.getContentPane().add(a2SmallButton);
+		layeredPane.add(a2SmallButton, 1, -1);
 		
-		PianoButton cButton = new PianoButton("C", 0);
-		frame.getContentPane().add(cButton);
+		PianoButton cButton = new PianoButton("C3", 0);
+		layeredPane.add(cButton, 0, -1);
 		
-		PianoButton dButton = new PianoButton("D", 60);
-		frame.getContentPane().add(dButton);
+		PianoButton dButton = new PianoButton("D3", 60);
+		layeredPane.add(dButton, 0, -1);
 		
-		PianoButton eButton = new PianoButton("E", 120);
-		frame.getContentPane().add(eButton);
+		PianoButton eButton = new PianoButton("E3", 120);
+		layeredPane.add(eButton, 0, -1);
 		
-		PianoButton fButton = new PianoButton("F", 180);
-		frame.getContentPane().add(fButton);
+		PianoButton fButton = new PianoButton("F3", 180);
+		layeredPane.add(fButton, 0, -1);
 		
-		PianoButton gButton = new PianoButton("G", 240);
-		frame.getContentPane().add(gButton);
+		PianoButton gButton = new PianoButton("G3", 240);
+		layeredPane.add(gButton, 0, -1);
 		
-		PianoButton aButton = new PianoButton("A", 300);
-		frame.getContentPane().add(aButton);
+		PianoButton aButton = new PianoButton("A3", 300);
+		layeredPane.add(aButton, 0, -1);
 		
-		PianoButton bButton = new PianoButton("B", 360);
-		frame.getContentPane().add(bButton);
+		PianoButton bButton = new PianoButton("B3", 360);
+		layeredPane.add(bButton, 0, -1);
 		
-		PianoButton c2Button = new PianoButton("C2", 420);
-		frame.getContentPane().add(c2Button);
+		PianoButton c2Button = new PianoButton("C4", 420);
+		layeredPane.add(c2Button, 0, -1);
 		
-		PianoButton d2Button = new PianoButton("D2", 480);
-		frame.getContentPane().add(d2Button);
+		PianoButton d2Button = new PianoButton("D4", 480);
+		layeredPane.add(d2Button, 0, -1);
 		
-		PianoButton e2Button = new PianoButton("E2", 540);
-		frame.getContentPane().add(e2Button);
+		PianoButton e2Button = new PianoButton("E4", 540);
+		layeredPane.add(e2Button, 0, -1);
 		
-		PianoButton f2Button = new PianoButton("F2", 600);
-		frame.getContentPane().add(f2Button);
+		PianoButton f2Button = new PianoButton("F4", 600);
+		layeredPane.add(f2Button, 0, -1);
 		
-		PianoButton g2Button = new PianoButton("G2", 660);
-		frame.getContentPane().add(g2Button);
+		PianoButton g2Button = new PianoButton("G4", 660);
+		layeredPane.add(g2Button, 0, -1);
 		
-		PianoButton a2Button = new PianoButton("A2", 720);
-		frame.getContentPane().add(a2Button);
+		PianoButton a2Button = new PianoButton("A4", 720);
+		layeredPane.add(a2Button, 0, -1);
 		
-		PianoButton b2Button = new PianoButton("B2", 780);
-		frame.getContentPane().add(b2Button);
+		PianoButton b2Button = new PianoButton("B4", 780);
+		layeredPane.add(b2Button, 0, -1);
 		
-		PianoButton c3Button = new PianoButton("C3", 840);
-		frame.getContentPane().add(c3Button);
+		PianoButton c3Button = new PianoButton("C5", 840);
+		layeredPane.add(c3Button, 0, -1);
 		
-		
+		frame.setContentPane(layeredPane);
 	}
 }
