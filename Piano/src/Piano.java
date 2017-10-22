@@ -7,6 +7,9 @@ import java.io.InputStream;
 
 import sun.audio.*;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 import javax.swing.JOptionPane;
@@ -154,378 +157,190 @@ public class Piano {
 	private class x53Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/053.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/053.wav");
+	}
 	}
 
 	private class x52Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/052.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/052.wav");
+	}
 	}
 
 	private class x51Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/051.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/051.wav");
+	}
 	}
 
 	private class x50Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/050.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/050.wav");
+	}
 	}
 
 	private class x49Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/049.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/049.wav");
+	}
 	}
 
 	private class x48Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/048.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/048.wav");
+	}
 	}
 
 	private class x47Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/047.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/047.wav");
+	}
 	}
 
 	private class x46Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/046.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/046.wav");
+	}
 	}
 
 	private class x45Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/045.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/045.wav");
+	}
 	}
 
 	private class x44Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/044.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/044.wav");
+	}
 	}
 
 	private class x43Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/043.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/043.wav");
+	}
 	}
 
 	private class x42Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/042.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/042.wav");
+	}
 	}
 
 	private class x41Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/041.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/041.wav");
+	}
 	}
 
 	private class x40Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/040.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/040.wav");
+	}
 	}
 
 	private class x39Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/039.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/039.wav");
+	}
 	}
 
 	private class x38Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/038.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/038.wav");
+	}
 	}
 
 	private class x37Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/037.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/037.wav");
+	}
 	}
 
 	private class x36Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/036.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/036.wav");
+	}
 	}
 
 	private class x35Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/035.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/035.wav");
+	}
 	}
 
 	private class x34Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/034.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/034.wav");
+	}
 	}
 
 	private class x33Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/033.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/033.wav");
+	}
 	}
 
 	private class x32Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/032.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/032.wav");
+	}
 	}
 
 	private class x31Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/031.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/031.wav");
+	}
 	}
 
 	private class x30Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/030.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/030.wav");
+	}
 	}
 
 	private class x29Listener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			InputStream iAudio;
-
-			try {
-				iAudio = new FileInputStream(new File("resources/029.wav"));
-				AudioStream iMusic = new AudioStream(iAudio);
-				AudioPlayer.player.start(iMusic);
-			} catch (Exception ex) {
-				JOptionPane.showMessageDialog(null, ex);
-			}
-		}
+			playSound("resources/029.wav");
+	}
 	}
 
 
+
+	public void playSound(String path) {
+	    try {
+	    	AudioInputStream inputStream = AudioSystem.getAudioInputStream(this.getClass().getClassLoader().getResource(path));
+	        Clip clip = AudioSystem.getClip();
+	        clip.open(inputStream);
+	        clip.start();
+	    } catch(Exception ex) {
+	        System.out.println("Error with playing sound.");
+	        ex.printStackTrace();
+	    }
+	}
 	
 }
